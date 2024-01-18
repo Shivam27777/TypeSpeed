@@ -1,12 +1,13 @@
 import React, { useCallback, useRef, useState, useEffect } from "react";
 import Keyboard from "react-simple-keyboard";
 import "react-simple-keyboard/build/css/index.css";
+import './keyboardLayout.css';
 
 
 function KeyboardLayout({count,setCount}) {
 
   const [input, setInput] = useState("");
-  const [layout, setLayout] = useState("default");
+  // const [layout, setLayout] = useState("default");
   const [elapsedTime, setElapsedTime] = useState(0);
   const [timerInterval, setTimerInterval] = useState(null);
 
@@ -60,7 +61,8 @@ function KeyboardLayout({count,setCount}) {
         placeholder={"Tap on the virtual keyboard to start"}
         onChange={onChangeInput}
       />
-      <Keyboard
+      <div className="App">
+      <Keyboard 
         physicalKeyboardHighlight = {true}
         physicalKeyboardHighlightPress = {true} 
         physicalKeyboardHighlightTextColor = "white"
@@ -68,10 +70,11 @@ function KeyboardLayout({count,setCount}) {
 
 
         keyboardRef={r => (keyboard.current = r)}
-        layoutName={layout}
+        // layoutName={layout}
         onChange={onChange}
         onKeyPress={onKeyPress}
       />
+      </div>
 
     </>
   );

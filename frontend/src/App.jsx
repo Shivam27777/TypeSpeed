@@ -33,7 +33,6 @@ function App() {
 
   return (
     <>
-      {/* <KeyboardTimer/> */}
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -42,9 +41,6 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
       <KeyboardLayout count = {count} setCount = {setCount}/>
     </>
   )
