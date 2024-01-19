@@ -2,12 +2,12 @@ import React, { useCallback, useRef, useState, useEffect } from "react";
 import Keyboard from "react-simple-keyboard";
 import "react-simple-keyboard/build/css/index.css";
 import './keyboardLayout.css';
+import Score from "./Score";
 
 
 function KeyboardLayout({count,setCount}) {
 
   const [input, setInput] = useState("");
-  // const [layout, setLayout] = useState("default");
   const [elapsedTime, setElapsedTime] = useState(0);
   const [timerInterval, setTimerInterval] = useState(null);
 
@@ -54,11 +54,13 @@ function KeyboardLayout({count,setCount}) {
 
   return (
     <>
+    <Score elapsedTime = {elapsedTime} input = {input}/>
     <h1>{elapsedTime}</h1>
 
       <input
         value={input}
-        placeholder={"Tap on the virtual keyboard to start"}
+        className="border-2 border-gray-300 rounded-md p-2 h-16 w-full focus:outline-none focus:border-grey-500"
+        placeholder={"Tap on the keyboard to start"}
         onChange={onChangeInput}
       />
       <div className="App">
