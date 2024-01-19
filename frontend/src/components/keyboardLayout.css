@@ -1,4 +1,9 @@
 .simple-keyboard {
     max-width: 100%;
     background-color: #aaaaaa;
+    padding: 1.25rem;
   }
+.input{
+  padding: 2rem;
+}
+
