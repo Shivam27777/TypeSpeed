@@ -4,12 +4,12 @@
     const stats = [
         { id: 1, name: 'Seconds', value: seconds },
         { id: 2, name: 'Number of words', value: words },
-        { id: 3, name: 'Incorrect', value: '46' },
+        // { id: 3, name: 'Incorrect', value: '46' },
       ]
     return (
       <div className="bg-white sm:py-5">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-2">
             {stats.map((stat) => (
               <div
                 key={stat.id}

@@ -1,8 +1,11 @@
-# React + Vite
+# Speed checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project provides users with the following features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Typing Speed Test:** Users can test their typing speed through an interactive typing speed test. The application will measure words per minute (WPM) and accuracy.
+
+- **Fun Facts:** Users can read interesting and entertaining fun facts presented on the platform. These facts cover a wide range of topics to engage and entertain users.
+
+- **Virtual Keyboard:** The application includes a virtual keyboard that imitates the user's actual keyboard. This allows users to practice typing and improve their skills using an interactive and visually appealing interface.

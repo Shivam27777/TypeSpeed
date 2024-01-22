@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import KeyboardLayout from './components/KeyboardLayout'
 import Header from './components/Header';
+import Fact from './components/Fact';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
   return (
     <>
     <Header/>
+    <Fact/>
       <KeyboardLayout count = {count} setCount = {setCount}/>
     </>
   )

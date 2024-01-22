@@ -3,7 +3,6 @@ import Keyboard from "react-simple-keyboard";
 import "react-simple-keyboard/build/css/index.css";
 import './keyboardLayout.css';
 import Score from "./Score";
-import Fact from "./Fact";
 
 
 function KeyboardLayout({count,setCount}) {
@@ -20,10 +19,7 @@ function KeyboardLayout({count,setCount}) {
   };
 
   const onKeyPress = (button) => {
-    console.log("Button pressed", button);
-    console.log(input.split(" ").length);
     if(!timerInterval) startTimer();
-    console.log(timerInterval , "interval")
     if(button === "{enter}"){
       setCount(0);
       stopTimer();
@@ -54,7 +50,6 @@ function KeyboardLayout({count,setCount}) {
   return (
     <>
     <Score elapsedTime = {elapsedTime} input = {input}/>
-    <Fact/>
       <input
         value={input}
         className="border-2 border-gray-300 rounded-md p-2 h-16 w-full focus:outline-none focus:border-grey-500 px-5 my-1"
@@ -70,7 +65,6 @@ function KeyboardLayout({count,setCount}) {
 
 
         keyboardRef={r => (keyboard.current = r)}
-        // layoutName={layout}
         onChange={onChange}
         onKeyPress={onKeyPress}
       />
